@@ -39,7 +39,6 @@ jobs:
 
           # scl enable devtoolset-10 bash
           source /opt/rh/devtoolset-10/enable
-
           sudo gcc -v
           sudo chmod 777 /etc/bashrc
           sudo echo "source /opt/rh/devtoolset-10/enable" >> /etc/bashrc
