@@ -9,7 +9,7 @@ on:
 
 jobs:
   Build-rpm:
-    runs-on: label-4
+    runs-on: label-5
     steps:
       - uses: actions/checkout@v3
         with:
