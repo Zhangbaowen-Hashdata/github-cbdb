@@ -38,6 +38,7 @@ jobs:
 
 
 
+
           scl enable devtoolset-10 bash
           source /opt/rh/devtoolset-10/enable
           sudo gcc -v
