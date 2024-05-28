@@ -36,6 +36,7 @@ jobs:
           sudo yum -y install epel-release centos-release-scl evtoolset-10-gcc \
                       devtoolset-10-gcc-c++ devtoolset-10-binutils
 
+
           scl enable devtoolset-10 bash
           source /opt/rh/devtoolset-10/enable
           sudo gcc -v
