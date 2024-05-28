@@ -71,16 +71,7 @@ jobs:
           echo "::set-output name=MAIN_VERSION::${main_version}"
           sudo git tag $new_tag
           git tag
-#         commit_logs=$(git log --oneline $old_tag..$new_tag)
-#         release_notes="# What's Changed:\n"
-#         while IFS= read -r line; do
-#             commit_message=$(echo $line | cut -d ' ' -f 2-)  # Extract submission information
-#             change_details=$(echo $line | cut -d ' ' -f 1)   # Extract change content
-#             release_notes+="\n- $commit_message: $change_details"
-#         done <<< "$commit_logs"
-#         echo -e "$release_notes" >> RELEASE_NOTES.md
-#         echo "Release notes have been updated in RELEASE_NOTES.md"
-#         cat RELEASE_NOTES.md
+
       - name: build_rpm
         run: |
           ./configure --with-perl --with-python --with-libxml --with-gssapi --prefix=/home/gpadmin/cbdb-install
