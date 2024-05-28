@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '* 16 * * *'
+    - cron: '20 9 * * *'
 
 jobs:
   Build-rpm:
@@ -35,6 +35,7 @@ jobs:
 
           sudo yum -y install epel-release centos-release-scl evtoolset-10-gcc \
                       devtoolset-10-gcc-c++ devtoolset-10-binutils
+
 
 
 
