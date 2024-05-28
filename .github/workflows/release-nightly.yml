@@ -3,7 +3,8 @@ name: Build and Release RPM
 on:
   push:
     branches:
-      - test-generate-release-note
+      - main
+
   schedule:
     - cron: '* 16 * * *'
 
@@ -13,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: test-generate-release-note
+          ref: main
           fetch-depth: 0
       - name: Environmental construction
         run: |
